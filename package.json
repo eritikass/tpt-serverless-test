@@ -4,14 +4,18 @@
   "description": "",
   "main": "handler.js",
   "scripts": {
+    "start": "serverless offline",
     "deploy": "serverless deploy",
     "remove": "serverless remove",
+    "log": "serverless logs -f hello -t",
+    "serverless": "serverless",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "serverless": "^1.67.3"
+    "serverless": "^1.67.3",
+    "serverless-offline": "^6.1.4"
   }
 }

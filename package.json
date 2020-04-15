@@ -6,6 +6,7 @@
   "scripts": {
     "deploy": "serverless deploy",
     "remove": "serverless remove",
+    "serverless": "serverless",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

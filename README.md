@@ -9,3 +9,8 @@ https://serverless.com/
 
 deploy: `npm run deploy`
 remove: `npm run remove`
+
+show logs:
+```
+npm run serverless -- logs -f hello -t
+```

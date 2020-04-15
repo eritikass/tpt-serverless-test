@@ -7,5 +7,12 @@ https://serverless.com/
  - configure aws creditals ( https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html )
  - install node packages ( `npm install` )
 
-deploy: `npm run deploy`
-remove: `npm run remove`
+run locally: `npm start`
+
+deploy to aws: `npm run deploy`
+remove from aws: `npm run remove`
+
+show logs from aws:
+```
+npm run serverless -- logs -f hello -t
+```

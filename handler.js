@@ -1,39 +1,36 @@
 'use strict';
-const _ = require('lodash');
 
 module.exports.hello = async event => {
-  /*
-  let { queryStringParameters } = event;
-  if (!queryStringParameters){
-    queryStringParameters = {};
-  }
 
-  const a = parseInt(event.queryStringParameters.a, 10) || 0;
-  const b = parseInt(event.queryStringParameters.b, 10) || 0;
-  */
+  const value_1 = (event.queryStringParameters || {}).num_1 || 0;
+  const value_2 = (event.queryStringParameters || {}).num_2 || 0;
 
-  const name = (event.queryStringParameters || {}).name || '';
+  const operation = (event.queryStringParameters || {}).operation || '+';
+  const answer = eval(`${value_1.toString()}` + `${operation.toString()}` + `${value_2.toString()}`);
+
   return {
     statusCode: 200,
     headers: { 'Content-Type': 'text/html'},
-    body: (name ? `<h1>Hello ${_.escape(name)}!</h1>` : '' ) + `<form action="/dev/hello" method="GET">
-    input: <input type="text" name="name" value="${_.escape(name)}"/>
-    <input type="submit"/>
+    body: `<form action="/dev/hello" method="GET" style="margin: 0 auto;">
+    <input type="number" name="num_1" placeholder="Value 1" value="${value_1}"/>
+
+    <select name="operation">
+      <option value="+"> + </option>
+      <option value="-"> - </option>
+      <option value="*"> * </option>
+      <option value="/"> / </option>
+      <option value=">"> > </option>
+      <option value=">="> >= </option>
+      <option value="=="> = </option>
+      <option value="<="> =< </option>
+      <option value="<"> < </option>
+    </select>
+
+    <input type="number" name="num_2" placeholder="Value 2" value="${value_2}"/>
+    <input type="submit" value="="/>
+    <input type="text" name="answer" placeholder="Answer" value="${answer}" disabled/>
     </form>
     `
-    /*
-    body: JSON.stringify(
-      {
-        a,
-        b,
-        sum: a + b,
-        //message: 'Go Serverless v1.0! Your function executed successfully!',
-        //input: event,
-      },
-      null,
-      2
-    ),
-    */
   };
 
   // Use this code if you don't use the http event with the LAMBDA-PROXY integration

@@ -11,7 +11,8 @@
     "serverless": "serverless",
     "test": "echo \"npm Script for testing husky..\"",
     "lint": "./node_modules/.bin/eslint .",
-    "success": "echo \"ESLint - Hey, great job! No syntax errors today!\""
+    "success-pre-commit": "echo \"ESLint - Hey, great job! No syntax errors today! Ready to be commited.\"",
+    "success-pre-push": "echo \"ESLint - Hey, great job! No syntax errors today! Ready to be pushed!\""
   },
   "keywords": [],
   "author": "",
@@ -29,8 +30,8 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint && npm run success",
-      "pre-push": "npm run lint && npm run success"
+      "pre-commit": "npm run lint && npm run success-pre-commit",
+      "pre-push": "npm run lint && npm run success-pre-push"
     }
   },
   "dependencies": {

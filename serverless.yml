@@ -6,12 +6,16 @@ provider:
   runtime: nodejs12.x
 
 functions:
-  hello:
-    handler: handler.hello
+  app:
+    handler: handler.handler
     events:
-      - http:
-          path: hello
-          method: get
+      - http: ANY /
+      - http: 'ANY {proxy+}'
+
+package:
+  exclude:
+    - client/**
+    - '!client/build/**'
 
 plugins:
   - serverless-offline

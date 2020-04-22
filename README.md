@@ -14,7 +14,7 @@ remove from aws: `npm run remove`
 
 show logs from aws:
 ```
-npm run serverless -- logs -f hello -t
+npm run serverless -- logs -f handler -t
 ```
 
 get logs in aws ui:

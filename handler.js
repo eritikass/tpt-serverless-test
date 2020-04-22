@@ -1,28 +1,24 @@
 'use strict';
 
-module.exports.hello = async event => {
-  let { queryStringParameters } = event;
-  if (!queryStringParameters) {
-    queryStringParameters = {};
+const serverless = require('serverless-http');
+const express = require('express')
+const path = require('path');
+const app = express()
+
+app.get('/date', (req, res, next) => {
+  res.json({
+    date: new Date(),
+  });
+})
+
+app.use(function (req, res, next) {
+  if (req.requestContext && req.requestContext.path === "/dev") {
+      res.redirect('/dev/')
+      return;
   }
-  const a = parseInt(queryStringParameters.a, 10) || 0;
-  const b = parseInt(queryStringParameters.b, 10) || 0;
+  next();
+});
 
-  return {
-    statusCode: 200,
-    body: JSON.stringify(
-      {
-        a,
-        b,
-        sum: a + b,
-        // message: 'Go Serverless v1.0! Your function executed successfully!',
-        // input: event,
-      },
-      null,
-      2
-    ),
-  };
+app.use(express.static(path.join(__dirname, "client", "./build")));
 
-  // Use this code if you don't use the http event with the LAMBDA-PROXY integration
-  // return { message: 'Go Serverless v1.0! Your function executed successfully!', event };
-};
+module.exports.handler = serverless(app);

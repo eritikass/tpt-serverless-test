@@ -1,7 +1,4 @@
-'use strict';
-
-module.exports.hello = async event => {
-
+module.exports.hello = async (event) => {
   const value_1 = (event.queryStringParameters || {}).num_1 || 0;
   const value_2 = (event.queryStringParameters || {}).num_2 || 0;
 
@@ -10,7 +7,7 @@ module.exports.hello = async event => {
 
   return {
     statusCode: 200,
-    headers: { 'Content-Type': 'text/html'},
+    headers: { 'Content-Type': 'text/html' },
     body: `<form action="/dev/hello" method="GET" style="margin: 0 auto;">
     <input type="number" name="num_1" placeholder="Value 1" value="${value_1}"/>
 
@@ -30,7 +27,7 @@ module.exports.hello = async event => {
     <input type="submit" value="="/>
     <input type="text" name="answer" placeholder="Answer" value="${answer}" disabled/>
     </form>
-    `
+    `,
   };
 
   // Use this code if you don't use the http event with the LAMBDA-PROXY integration

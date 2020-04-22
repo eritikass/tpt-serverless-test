@@ -1,7 +1,7 @@
-'use strict';
+
 const _ = require('lodash');
 
-module.exports.hello = async event => {
+module.exports.hello = async (event) => {
   /*
   let { queryStringParameters } = event;
   if (!queryStringParameters){
@@ -15,12 +15,12 @@ module.exports.hello = async event => {
   const name = (event.queryStringParameters || {}).name || '';
   return {
     statusCode: 200,
-    headers: { 'Content-Type': 'text/html'},
-    body: (name ? `<h1>Hello ${_.escape(name)}!</h1>` : '' ) + `<form action="/dev/hello" method="GET">
+    headers: { 'Content-Type': 'text/html' },
+    body: `${name ? `<h1>Hello ${_.escape(name)}!</h1>` : ''}<form action="/dev/hello" method="GET">
     input: <input type="text" name="name" value="${_.escape(name)}"/>
     <input type="submit"/>
     </form>
-    `
+    `,
     /*
     body: JSON.stringify(
       {

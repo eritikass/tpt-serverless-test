@@ -1,0 +1,9 @@
+{
+    "extends": "airbnb",
+
+    "rules": {
+        "no-eval": "off",
+        "camelcase": "off",
+        "no-useless-concat": "off"
+    }
+}

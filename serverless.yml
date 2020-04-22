@@ -4,76 +4,13 @@ provider:
     name: aws
     runtime: nodejs12.x
 
-inputs:
-  src:
-    src: ./src
-    hook: yarn build
-    dist: ./build
-  # artifact: .serverless/myService.zip
-  exclude:
-    - src/**
-    - config/**
-    - tests/**
-    - .vscode/**
-  include:
-    - build/**
-
 functions:
-  hello:
-    handler: com.serverless.Handler
+  app:
+    handler: handler.handler
     events:
-      - http: hello
-          method: get
+      - http: ANY /
+      - http: 'ANY {proxy+}'
+        cors: true
 
 plugins:
   - serverless-offline
-
-
-
-# component: website
-# provider:
-#     runtime: nodejs12.x
-#     stage: dev
-# name: calculator
-
-# inputs:
-#   src:
-#     src: ./src
-#     hook: yarn build
-#     dist: ./build
-
-# functions:
-#   hello:
-#     handler: bundle.js
-#     events:
-#       - http:
-#           path: hello
-#           method: get
-    
-# plugins:
-#   - serverless-webpack
-#   - serverless-offline
-
-
-
-# service: myService
-
-# provider:
-#     name: aws
-#     runtime: nodejs12.x
-
-# inputs:
-#   src:
-#     src: ./src
-#     hook: yarn build
-#     dist: ./build
-
-# functions:
-#   server:
-#     handler: ./src/index.server
-#     events:
-#       - http: ANY /
-#       - http: ANY /{proxy+}
-
-# plugins:
-#   - serverless-offline

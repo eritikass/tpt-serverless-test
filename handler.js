@@ -8,10 +8,11 @@ module.exports.hello = async (event) => {
   return {
     statusCode: 200,
     headers: { 'Content-Type': 'text/html' },
-    body: `<form action="/dev/hello" method="GET" style="margin: 0 auto;">
-    <input type="number" name="num_1" placeholder="Value 1" value="${value_1}"/>
+    body: `<h3>Awesome Calculator!<h3>
+    <form action="/dev/hello" method="GET" style="margin: 0 auto;">
+    <input id="ValueInput1" type="number" name="num_1" placeholder="Value 1" value="${value_1}"/>
 
-    <select name="operation">
+    <select id="SelectOperation" value="${operation}" name="operation">
       <option value="+"> + </option>
       <option value="-"> - </option>
       <option value="*"> * </option>
@@ -23,9 +24,9 @@ module.exports.hello = async (event) => {
       <option value="<"> < </option>
     </select>
 
-    <input type="number" name="num_2" placeholder="Value 2" value="${value_2}"/>
-    <input type="submit" value="="/>
-    <input type="text" name="answer" placeholder="Answer" value="${answer}" disabled/>
+    <input id="ValueInput2" type="number" name="num_2" placeholder="Value 2" value="${value_2}"/>
+    <input id="OperationSubmit" type="submit" value="="/>
+    <input id="AnswerOutput" type="text" name="answer" placeholder="Answer" value="${answer}" disabled/>
     </form>
     `,
   };

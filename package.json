@@ -9,10 +9,10 @@
     "remove": "serverless remove",
     "log": "serverless logs -f hello -t",
     "serverless": "serverless",
-    "test": "echo \"npm Script for testing husky..\"",
     "lint": "./node_modules/.bin/eslint handler.js",
     "success-pre-commit": "echo \"ESLint - Hey, great job! No syntax errors today! Ready to be commited.\"",
-    "success-pre-push": "echo \"ESLint - Hey, great job! No syntax errors today! Ready to be pushed!\""
+    "success-pre-push": "echo \"ESLint - Hey, great job! No syntax errors today! Ready to be pushed!\"",
+    "test": "./node_modules/.bin/nightwatch tests/visual-tests/calc-test.js"
   },
   "keywords": [],
   "author": "",

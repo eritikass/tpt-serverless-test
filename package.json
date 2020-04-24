@@ -2,6 +2,7 @@
   "name": "tpt-serverless-test",
   "version": "1.0.0",
   "description": "Serverless-Calculator",
+  "homepage": "./",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config config/webpack.config.production.js",
@@ -21,7 +22,6 @@
   },
   "author": "tomimarkus991",
   "license": "ISC",
-  "homepage": "https://github.com/tomimarkus991/React-Webpack-Babel-Bulma-Boilerplate",
   "dependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
@@ -54,6 +54,7 @@
     "sass-loader": "^8.0.2",
     "semantic-release": "^15.14.0",
     "serve": "^11.3.0",
+    "serverless-aws-static-file-handler": "^2.0.5",
     "serverless-http": "^2.3.2",
     "shx": "^0.3.2",
     "style-loader": "^1.1.4",

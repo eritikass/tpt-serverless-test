@@ -1,8 +1,11 @@
 'use strict';
-const serverless = require('serverless-http');
+const StaticFileHandler = require('serverless-aws-static-file-handler');
 const express = require('express');
 const path = require('path');
 const app = express();
+
+const clientFilesPath = path.join(__dirname, './build/');
+const fileHandler = new StaticFileHandler(clientFilesPath);
 
 app.get('/date', (req, res) => {
 	res.json({
@@ -18,5 +21,7 @@ app.use(function (req, res, next) {
 	next();
 });
 
-app.use(express.static(path.join(__dirname, 'build')));
-module.exports.handler = serverless(app);
+module.exports.handler = async (event, context) => {
+	event.path = 'index.html';
+	return fileHandler.get(event, context);
+};

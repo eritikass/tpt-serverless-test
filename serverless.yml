@@ -1,8 +1,9 @@
 service: myService
 
 provider:
-    name: aws
-    runtime: nodejs12.x
+  name: aws
+  runtime: nodejs12.x
+  region: us-east-1
     
 inputs:
   src:
@@ -21,3 +22,4 @@ functions:
 
 plugins:
   - serverless-offline
+  - serverless-aws-static-file-handler

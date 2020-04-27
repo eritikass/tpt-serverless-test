@@ -4,6 +4,15 @@
     "rules": {
         "no-eval": "off",
         "camelcase": "off",
-        "no-useless-concat": "off"
+        "no-useless-concat": "off",
+        "no-use-before-define": "off",
+        "max-len": "off",
+        "no-template-curly-in-string": "off",
+        "import/no-extraneous-dependencies": "off",
+        "global-require": "off",
+        "no-empty": "off",
+        "no-plusplus": "off",
+        "no-undef": "off",
+        "no-unused-vars": "off"
     }
 }

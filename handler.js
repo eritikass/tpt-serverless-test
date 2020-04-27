@@ -1,9 +1,13 @@
+const equalize = require('./equalize');
+
 module.exports.hello = async (event) => {
   const value_1 = (event.queryStringParameters || {}).num_1 || 0;
   const value_2 = (event.queryStringParameters || {}).num_2 || 0;
 
   const operation = (event.queryStringParameters || {}).operation || '+';
-  const answer = eval(`${value_1.toString()}` + `${operation.toString()}` + `${value_2.toString()}`);
+
+  const answer = equalize(value_1, value_2, operation);
+
 
   return {
     statusCode: 200,

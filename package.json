@@ -12,7 +12,9 @@
     "lint": "./node_modules/.bin/eslint handler.js",
     "success-pre-commit": "echo \"ESLint - Hey, great job! No syntax errors today! Ready to be commited.\"",
     "success-pre-push": "echo \"ESLint - Hey, great job! No syntax errors today! Ready to be pushed!\"",
-    "test": "./node_modules/.bin/nightwatch tests/visual-tests/calc-test.js"
+    "test": "./node_modules/.bin/nightwatch tests/visual-tests/calc-test.js && echo \"Nightwatch tests passed..\" && jest && echo \"Jest tests passed..\"",
+    "jest": "jest",
+    "nightwatch": "./node_modules/.bin/nightwatch tests/visual-tests/calc-test.js"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +28,7 @@
     "eslint-plugin-react": "^7.19.0",
     "geckodriver": "^1.19.1",
     "husky": "^4.2.5",
+    "jest": "^25.4.0",
     "nightwatch": "^1.3.4",
     "react": "^16.13.1",
     "selenium-server": "^3.141.59",

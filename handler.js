@@ -1,6 +1,6 @@
 const equalize = require('./equalize');
 
-module.exports.hello = async (event) => {
+module.exports.calculator = async (event) => {
   const value_1 = (event.queryStringParameters || {}).num_1 || 0;
   const value_2 = (event.queryStringParameters || {}).num_2 || 0;
 
@@ -13,9 +13,9 @@ module.exports.hello = async (event) => {
     statusCode: 200,
     headers: { 'Content-Type': 'text/html' },
     body: `<h3>Awesome Calculator!<h3>
-    <form action="/dev/hello" method="GET" style="margin: 0 auto;">
+    <form action="/dev/calc" method="GET" style="margin: 0 auto;">
     <input id="ValueInput1" type="number" name="num_1" placeholder="Value 1" value="${value_1}"/>
-
+    
     <select id="SelectOperation" value="${operation}" name="operation">
       <option value="+"> + </option>
       <option value="-"> - </option>

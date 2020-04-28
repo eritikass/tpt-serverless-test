@@ -3,7 +3,7 @@ const config = require('../../nightwatch.conf.js');
 module.exports = {
   Test(browser) {
     browser
-      .url('http://localhost:3000/dev/hello')
+      .url('http://localhost:3000/dev/calc')
       .waitForElementVisible('body')
       .assert.containsText('body', 'Awesome Calculator!')
       .pause(1500)

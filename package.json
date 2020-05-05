@@ -4,6 +4,7 @@
   "description": "",
   "main": "handler.js",
   "scripts": {
+    "test": "echo 'Running test script...'",
     "start": "serverless offline",
     "deploy": "serverless deploy",
     "remove": "serverless remove",
@@ -12,7 +13,7 @@
     "lint": "./node_modules/.bin/eslint .",
     "success-pre-commit": "echo \"ESLint - Hey, great job! No syntax errors today! Ready to be commited.\"",
     "success-pre-push": "echo \"ESLint - Hey, great job! No syntax errors today! Ready to be pushed!\"",
-    "test": "./node_modules/.bin/nightwatch tests/visual-tests/calc-test.js && echo \"Nightwatch tests passed..\" && jest && echo \"Jest tests passed..\"",
+    "tests": "./node_modules/.bin/nightwatch tests/visual-tests/calc-test.js && echo \"Nightwatch tests passed..\" && jest && echo \"Jest tests passed..\"",
     "jest": "jest",
     "nightwatch": "./node_modules/.bin/nightwatch tests/visual-tests/calc-test.js"
   },

@@ -23,7 +23,7 @@ npm run lint
 
 Run all tests (unit-tests and visual-tests):
 ```
-npm run test
+npm run tests
 ```
 
 Run tests individually:

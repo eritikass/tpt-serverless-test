@@ -1,30 +1,30 @@
-12:53:29.818 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
-12:53:29.895 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4444
-2020-04-29 12:53:29.964:INFO::main: Logging initialized @561ms to org.seleniumhq.jetty9.util.log.StdErrLog
-12:53:30.219 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
-12:53:30.536 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4444
-12:53:31.071 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+19:50:44.344 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+19:50:44.399 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 4444
+2020-05-05 19:50:44.430:INFO::main: Logging initialized @224ms to org.seleniumhq.jetty9.util.log.StdErrLog
+19:50:44.578 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
+19:50:44.857 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 4444
+19:50:45.078 INFO [ActiveSessionFactory.apply] - Capabilities are: {
   "browserName": "firefox",
   "name": "Calc Test"
 }
-12:53:31.072 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
-1588154012275	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\georg\\AppData\\Local\\Temp\\rust_mozprofilenI4sRq"
-1588154012815	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
-1588154013217	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1588154013217	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
-1588154013218	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1588154013218	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+19:50:45.079 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.firefox.GeckoDriverService)
+1588697445966	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\georg\\AppData\\Local\\Temp\\rust_mozprofileD14OvM"
+1588697446324	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588697446719	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588697446720	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588697446720	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588697446720	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-1588154014661	Marionette	INFO	Listening on port 55792
-12:53:34.914 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
-12:53:34.944 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session e4771230-79a1-47e9-a68f-765cb84382be (org.openqa.selenium.firefox.GeckoDriverService)
+1588697448004	Marionette	INFO	Listening on port 60039
+19:50:48.116 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+19:50:48.138 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 1492f08a-c7ce-410f-b073-152237fa25f1 (org.openqa.selenium.firefox.GeckoDriverService)
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-1588154038901	Marionette	INFO	Stopped listening on port 55792
+1588697478431	Marionette	INFO	Stopped listening on port 60039
 
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
-12:53:59.592 INFO [ActiveSessions$1.onStop] - Removing session e4771230-79a1-47e9-a68f-765cb84382be (org.openqa.selenium.firefox.GeckoDriverService)
+19:51:18.983 INFO [ActiveSessions$1.onStop] - Removing session 1492f08a-c7ce-410f-b073-152237fa25f1 (org.openqa.selenium.firefox.GeckoDriverService)

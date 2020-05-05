@@ -14,8 +14,9 @@ show logs from aws:
 npm run serverless -- logs -f hello -t
 ```
 
-## Homework related scripts you can run:
+## Homework:
 
+### For testing...
 Run eslint:
 ```
 npm run lint
@@ -31,3 +32,6 @@ Run tests individually:
 npm run jest
 npm run nightwatch
 ```
+
+### For CI Deployment i used Travis CI: `https://travis-ci.org/`
+

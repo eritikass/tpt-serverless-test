@@ -25,7 +25,6 @@ app.get('/date', (req, res) => {
 // app.use("/dev", express.static(path.join(__dirname, "build")));
 app.get('/dev', (req, res, next) => {
 	if (req.requestContext && req.requestContext.path === '/dev') {
-		express.static(path.join(__dirname, 'build'));
 		res.redirect('/dev/');
 		return;
 	}
@@ -34,15 +33,13 @@ app.get('/dev', (req, res, next) => {
 app.use((req, res, next) => {
 	if (req.requestContext && req.requestContext.path === '/dev') {
 		res.redirect('/dev/');
-		express.static(path.join(__dirname, 'build'));
 		return;
 	}
 	next();
 });
+express.static(path.join(__dirname, 'build'));
 
 module.exports.handler = async (event, context) => {
-	express.static(path.join(__dirname, 'build'));
-	serverless(app);
 	event.path = 'index.html';
 	return fileHandler.get(event, context);
 };

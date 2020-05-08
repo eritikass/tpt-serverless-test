@@ -1,10 +1,10 @@
-service: myService
+service: Calculator
 
 provider:
   name: aws
   runtime: nodejs12.x
   region: us-east-1
-    
+
 inputs:
   src:
     src: ./src
@@ -12,15 +12,25 @@ inputs:
     dist: ./build
 
 functions:
-  app:
+  handler:
     handler: handler.handler
     events:
       - http: ANY /
+        async: true
         cors: true
-      - http: 'ANY {proxy+}'
+      - http: "ANY {proxy+}"
+        async: true
         cors: true
+
+package:
+  exclude:
+    - geckodriver.log
+    - tests_output
+  include:
+    - handler.js
 
 plugins:
   - serverless-offline
   - serverless-aws-static-file-handler
   - serverless-plugin-include-dependencies
+  - serverless-plugin-common-excludes

@@ -22,6 +22,9 @@ class Equation extends Component {
 	handleNumber1Change(e) {
 		this.setState({ number1: e.target.value });
 	}
+	handleActionChange(e) {
+		this.setState({ action: e.target.value });
+	}
 	handleNumber2Change(e) {
 		this.setState({ number2: e.target.value });
 	}
@@ -102,24 +105,28 @@ class Equation extends Component {
 			}
 		}
 	}
-	handleActionChange(e) {
-		this.setState({ action: e.target.value });
+	handleRefresh() {
+		window.location.reload();
+		// formSubmit.reset();
+		// const answerh1 = document.querySelector('.answerh1');
+		// answerh1.textContent = '0';
 	}
 	render() {
 		return (
 			<div className="container">
 				<form
-					className="columns is-vcentered is-centered is-gapless"
+					className="columns is-vcentered is-centered is-gapless submit1"
 					onSubmit={this.handleSubmit}>
+					{/* Input 1 */}
 					<div className="column is-2 is-one-quarter has-text-centered">
 						<input
-							className="input is-rounded is-info"
+							className="input is-rounded is-info input1"
 							type="number"
 							placeholder="5"
 							onChange={this.handleNumber1Change}
 						/>
 					</div>
-
+					{/* Action */}
 					<div className="column is-1 is-one-quarter has-text-centered">
 						<div className="actions field">
 							<div className="select is-info">
@@ -140,25 +147,25 @@ class Equation extends Component {
 							</div>
 						</div>
 					</div>
-
+					{/* Input 2 */}
 					<div className="column is-2 is-one-quarter has-text-centered">
 						<input
-							className="input is-rounded is-info"
+							className="input is-rounded is-info input2"
 							type="number"
 							placeholder="5"
 							onChange={this.handleNumber2Change}
 						/>
 					</div>
-
+					{/* Submit */}
 					<div className="equal has-text-centered">
 						<input
 							className="pointer input is-info"
 							type="submit"
 							value="="></input>
 					</div>
-
+					{/* Answer */}
 					<div className="answer has-text-centered">
-						<h1>{this.state.answer}</h1>
+						<h1 className="answerh1">{this.state.answer}</h1>
 					</div>
 				</form>
 			</div>

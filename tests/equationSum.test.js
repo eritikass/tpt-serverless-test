@@ -1,12 +1,14 @@
-import { add } from '../src/components/Equation';
-import { substract } from '../src/components/Equation';
-import { multiply } from '../src/components/Equation';
-import { divide } from '../src/components/Equation';
-import { greaterThan } from '../src/components/Equation';
-import { greaterThanOrEqual } from '../src/components/Equation';
-import { equal } from '../src/components/Equation';
-import { lessThanOrEqual } from '../src/components/Equation';
-import { lessThan } from '../src/components/Equation';
+import {
+	add,
+	substract,
+	multiply,
+	divide,
+	greaterThan,
+	greaterThanOrEqual,
+	equal,
+	lessThanOrEqual,
+	lessThan,
+} from '../src/components/Equation';
 
 // Add tests
 test('add | 2 + 4 should be 6', () => {

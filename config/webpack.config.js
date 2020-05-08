@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const ROOT_DIRECTORY = path.join(__dirname, '..');
@@ -21,6 +22,12 @@ const config = {
 		new HtmlWebpackPlugin({
 			template: path.join(SRC_DIRECTORY, 'index.html'),
 		}),
+		new CopyWebpackPlugin([
+			{
+				from: path.join(SRC_DIRECTORY, 'assets'),
+				to: path.join(ROOT_DIRECTORY, 'build'),
+			},
+		]),
 		new MiniCssExtractPlugin({
 			filename: './src/sass/styles.scss',
 		}),

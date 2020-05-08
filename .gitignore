@@ -51,3 +51,7 @@ yarn-error.log
 .env
 
 geckodriver.log
+coverage
+
+tests_output
+__snapshots__

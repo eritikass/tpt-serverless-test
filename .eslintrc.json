@@ -2,7 +2,6 @@
     "extends": "airbnb",
 
     "rules": {
-        "no-eval": "off",
         "camelcase": "off",
         "no-useless-concat": "off",
         "no-use-before-define": "off",
@@ -14,6 +13,7 @@
         "no-plusplus": "off",
         "no-undef": "off",
         "no-unused-vars": "off",
-        "no-underscore-dangle": "off"
+        "no-underscore-dangle": "off",
+        "no-param-reassign": "off"
     }
 }

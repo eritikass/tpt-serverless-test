@@ -5,7 +5,7 @@ module.exports = {
     browser
       .url('http://localhost:3000/dev/calc')
       .waitForElementVisible('body')
-      .assert.containsText('body', 'Awesome Calculator!')
+      .assert.containsText('body', 'Homework Calculator! - Serverless App')
       .pause(1500)
       .maximizeWindow()
       .pause(500)

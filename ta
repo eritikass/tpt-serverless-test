@@ -1,0 +1,177 @@
+[33mcommit b0fca80a6bf4829905b16a1c944aec3c2a979671[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 8690db3 6c825ff
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Mon May 11 15:03:04 2020 +0300
+
+    Fix conflict
+
+[33mcommit 8690db397219fd778b6e9a2b54de07b6cb21bab9[m[33m ([m[1;31morigin/UpdateHomework[m[33m, [m[1;32mUpdateHomework[m[33m)[m
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Mon May 11 14:57:12 2020 +0300
+
+    Fix homework, improve design.
+
+[33mcommit 6c825ff0dfe51ab3cd735baaca378ec2d9f69649[m
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Mon May 11 14:16:03 2020 +0300
+
+    Delete geckodriver.log
+
+[33mcommit e12bb227bd161f7aa611551e7da67dd129420ec3[m
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Mon May 11 14:15:52 2020 +0300
+
+    Delete selenium-server.log
+
+[33mcommit 3d72d05e6c8b8198a68897519d383db5f5b97406[m
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Thu May 7 19:36:39 2020 +0300
+
+    Add improvements, more todo
+
+[33mcommit 3a5779dc58680c9f55415749e1587800b754104f[m
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Tue May 5 19:51:39 2020 +0300
+
+    Finish homework
+
+[33mcommit 0cfea7ada94722295814ba5690c736ddd81d2f27[m
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Tue May 5 19:39:22 2020 +0300
+
+    Update Travis CI script
+
+[33mcommit 99b6a47f33b1349d776ce5f670eb712794850afd[m
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Tue May 5 19:36:53 2020 +0300
+
+    Test 2
+
+[33mcommit da24eadd3f34a01652de858bf086062c727ba4d5[m
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Tue May 5 19:31:59 2020 +0300
+
+    Test
+
+[33mcommit 8c69fbe1490a01b6e39866c55111b85e459553ce[m
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Tue May 5 19:28:23 2020 +0300
+
+    Update and test CI deploy again
+
+[33mcommit 146c296ecc03ce8cb441e87804c7ccaaad3b2b23[m
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Tue May 5 19:23:52 2020 +0300
+
+    Update and test CI deploy
+
+[33mcommit 460dd7f87c55643cc4e3999e78a28229317af4c7[m
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Tue May 5 19:18:46 2020 +0300
+
+    Add travis CI
+
+[33mcommit 370a8f207c42699f9fc81cb5b2d4c07c65f7f0ce[m
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Wed Apr 29 12:55:48 2020 +0300
+
+    Fix handler test function.
+
+[33mcommit b34fe5c5a88ef01fbf4ac73c05898e9d3a64addc[m
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Tue Apr 28 15:35:28 2020 +0300
+
+    Change path and update visual test url. Improve handler test, although it always timeouts.
+
+[33mcommit d05ff201ee58938088f700c413ddab7c3d11418a[m
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Mon Apr 27 15:20:07 2020 +0300
+
+    Update readme
+
+[33mcommit 4d0b5ec410d91e2136e0c214adb9a900213ba460[m
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Mon Apr 27 15:09:14 2020 +0300
+
+    Modify eslint rules
+
+[33mcommit 8377a97d3a041b2de39ce06208c2db08b8f2eb12[m
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Mon Apr 27 15:01:48 2020 +0300
+
+    Add jest unit tests
+
+[33mcommit 8f0757e2bf0dc1d68d6465aa8b004b65f9785f76[m
+Merge: 9267e4e 3035393
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Thu Apr 23 21:16:22 2020 +0300
+
+    MERGE: Added nightwatch
+    
+    Add nightwatch
+
+[33mcommit 3035393274ba11d0ec965da6d74afb28205cdb7b[m[33m ([m[1;31morigin/AddNightwatch[m[33m, [m[1;32mAddNightwatch[m[33m)[m
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Thu Apr 23 21:15:01 2020 +0300
+
+    Add working visual testing via nightwatch.
+
+[33mcommit ffc1d25372eee015d2e630562f0598e248fec406[m
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Thu Apr 23 19:33:07 2020 +0300
+
+    Add nightwatch, but doesnt yet work, switched to another branch just in case
+
+[33mcommit 9267e4e7ed85028146e2234b35ae41f793cf3f1e[m
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Wed Apr 22 15:02:07 2020 +0300
+
+    Test eslint
+
+[33mcommit 8abdd60657a365c08aaf5daf5597f48ef67552e4[m
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Wed Apr 22 14:56:42 2020 +0300
+
+    Add eslint
+
+[33mcommit 3cd050db15992b7b07dfd296f50acad5944ad5b9[m
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Wed Apr 22 13:51:24 2020 +0300
+
+    Add husky
+
+[33mcommit 58fb2ae20d7f808802b213fe7d5869714ed24f88[m
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Tue Apr 21 23:14:21 2020 +0300
+
+    Add functional serverless calculator
+
+[33mcommit aa447bf06742ecab2062a36dc0803a9b0d321854[m
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Wed Apr 15 14:55:53 2020 +0300
+
+    add some base code for homework
+
+[33mcommit 8af737672d04a8f889b39a8288e2cf568fc63362[m
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Wed Apr 15 13:57:00 2020 +0300
+
+    Update readme
+
+[33mcommit 6a47c63e916a1aedb611840ca65a334b4ac916bb[m
+Author: Georg Daniel Vahtramäe <48998862+GeorgDV@users.noreply.github.com>
+Date:   Wed Apr 15 13:56:06 2020 +0300
+
+    Add serverless offline and other lesson work
+
+[33mcommit 51e2ecac7b58e8996ef58e41231e589ba68157bc[m
+Author: Siim Tiilen <eritikass@gmail.com>
+Date:   Wed Apr 15 13:01:18 2020 +0300
+
+    add readme
+
+[33mcommit 0bd1db82b3072992ed04069e170f97f25503442d[m
+Author: Siim Tiilen <eritikass@gmail.com>
+Date:   Wed Apr 15 12:56:58 2020 +0300
+
+    add minimum example

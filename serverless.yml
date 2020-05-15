@@ -16,10 +16,8 @@ functions:
     handler: handler.handler
     events:
       - http: ANY /
-        async: true
         cors: true
-      - http: "ANY {proxy+}"
-        async: true
+      - http: ANY {proxy+}
         cors: true
 
 package:

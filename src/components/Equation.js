@@ -107,9 +107,6 @@ class Equation extends Component {
 	}
 	handleRefresh() {
 		window.location.reload();
-		// formSubmit.reset();
-		// const answerh1 = document.querySelector('.answerh1');
-		// answerh1.textContent = '0';
 	}
 	render() {
 		return (

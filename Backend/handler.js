@@ -4,11 +4,14 @@ const serverless = require('serverless-http');
 const express = require('express');
 const path = require('path');
 const cors = require('cors');
-const getCharacters = require('./ai');
+const bodyParser = require('body-parser');
+const getChars = require('./getChars');
+
 
 const app = express();
 
 app.use(cors());
+app.use(bodyParser());
 
 app.get('/date', (req, res) => {
   res.json({
@@ -19,7 +22,8 @@ app.get('/date', (req, res) => {
 app.post('/image', (req, res) => {
   const base64String = req.body.toString();
   try {
-    getCharacters(base64String, (data) => {
+    getChars(base64String, (data) => {
+      console.log('Im Here!');
       res.send(data);
     });
   } catch (err) {
@@ -36,6 +40,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use(express.static(path.join(__dirname, 'client', './build')));
+app.use(express.static(path.join(__dirname, '../client', './build')));
 
 module.exports.handler = serverless(app);
+module.exports.app = app;

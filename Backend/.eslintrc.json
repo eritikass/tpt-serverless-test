@@ -12,7 +12,7 @@
     "parserOptions": {
         "ecmaVersion": 11
     },
-    "plugins": ["jest"],
+    // "plugins": ["jest"],
     "rules": {
         "linebreak-style": ["error", "windows"],
         "no-console": "off"

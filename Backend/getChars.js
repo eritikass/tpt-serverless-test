@@ -1,6 +1,9 @@
 const { createWorker } = require('tesseract.js');
 
-const getCharacters = async (base64String, callBack) => {
+const getChars = async (base64String, callBack) => {
+  console.log('本物だ！');
+  console.log('Im the real getChars!');
+
   const worker = createWorker();
   (async () => {
     await worker.load();
@@ -17,4 +20,4 @@ const getCharacters = async (base64String, callBack) => {
   })();
 };
 
-module.exports = getCharacters;
+module.exports = getChars;

@@ -1,4 +1,19 @@
-# serverless example
+# serverless Albert
+
+
+```sh
+cd client
+npm run build
+cd ..
+cd Backend
+npm i
+npm run start
+```
+
+now you can do a request on 
+http://localhost:3000/dev/index.html to get the client page
+or do a POST on http://localhost:3000/dev/image with an Base54 encoded image (an example image is in ./Backend/imgexample.txt)
+
 
 https://serverless.com/
 

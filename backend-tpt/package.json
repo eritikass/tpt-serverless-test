@@ -5,7 +5,7 @@
   "main": "handler.js",
   "scripts": {
     "start": "serverless offline",
-    "predeploy": "cd ../client && npm run build-serverless",
+    "predeploy": "rimraf client/build/* && cd ../client && npm run build-serverless",
     "deploy": "serverless deploy",
     "deploy-function": "serverless deploy function -f app",
     "remove": "serverless remove",
@@ -23,6 +23,8 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.0",
     "jest": "^26.0.1",
+    "mkdirp": "^1.0.4",
+    "rimraf": "^3.0.2",
     "serverless": "^1.67.3",
     "serverless-offline": "^6.1.4",
     "supertest": "^4.0.2"

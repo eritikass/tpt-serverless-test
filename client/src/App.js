@@ -11,7 +11,7 @@ function App() {
   const sendImg = () => {
     // console.log(state.cfd.save());
     setLoading(true);
-    axios.post('https://ckuacu4bee.execute-api.us-east-1.amazonaws.com/dev/image', cfd.save(), {
+    axios.post('https://6fq1iharw4.execute-api.us-east-1.amazonaws.com/dev/image', cfd.save(), {
       headers: {
         'content-type': 'text/plain'
       }
@@ -60,7 +60,7 @@ function App() {
       <header className="App-header">
         <p className="text-xl px-40">For best results write your numbers and symbols in a font like this (the AI is very picky)</p>
         <img src="./font.png" alt="fonts" className="mt-1" style={{width: "30rem"}}/>
-        {state.apiAns ? state.apiAns : "No input yet"}
+        {loading ? "Loading" : state.apiAns ? state.apiAns : "No input yet"}
         <div className="m-1">
           <button className="inline-block mx-2 text-xl p-1 rounded bg-blue-800 border border-blue-600" onClick={clear}>Clear</button>
           <button className="inline-block mx-2 text-xl p-1 rounded bg-blue-800 border border-blue-600" onClick={undo}>Undo</button>

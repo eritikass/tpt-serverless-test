@@ -29,7 +29,7 @@ remove from aws: `npm run remove`
 
 show logs from aws:
 ```
-npm run serverless -- logs -f handler -t
+npm run serverless -- logs -f app -t
 ```
 
 get logs in aws ui:

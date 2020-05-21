@@ -1,0 +1,39 @@
+{
+  "name": "backend-tpt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "start": "serverless offline",
+    "predeploy": "cd ../client && npm run build-serverless",
+    "deploy": "serverless deploy",
+    "deploy-function": "serverless deploy function -f app",
+    "remove": "serverless remove",
+    "serverless": "serverless",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "jest": "^26.0.1",
+    "serverless": "^1.67.3",
+    "serverless-offline": "^6.1.4",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "memfs": "^3.2.0",
+    "node-tesseract-ocr": "^1.0.0",
+    "serverless-http": "^2.3.2",
+    "tesseract.js": "^2.1.1"
+  }
+}

@@ -1,0 +1,22 @@
+
+service: backend-tpt
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  timeout: 30 # optional, in seconds, default is 6
+
+functions:
+  app:
+    handler: handler.handler
+    events:
+      - http: ANY /
+      - http: 'ANY {proxy+}'
+
+package:
+  exclude:
+    - client/**
+    - '!client/build/**'
+
+plugins:
+  - serverless-offline

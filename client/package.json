@@ -1,0 +1,41 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "./",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "canvas-free-drawing": "^2.0.4",
+    "mathjs": "^7.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.0",
+    "tailwindcss": "^1.4.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build-serverless": "react-scripts build && cp -fr build ../backend-tpt/client/",
+    "eject": "react-scripts eject",
+    "test": "nightwatch /tests/test.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "geckodriver": "^1.19.1",
+    "nightwatch": "^1.3.5"
+  }
+}

@@ -1,5 +1,6 @@
 # serverless Albert
 
+Live at https://6fq1iharw4.execute-api.us-east-1.amazonaws.com/dev/
 
 ```sh
 cd client

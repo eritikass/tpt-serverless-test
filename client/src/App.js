@@ -67,7 +67,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p className="text-xl px-40">For best results write your numbers and symbols in a font like this (the AI is very picky)</p>
-        <img src="./font.png" alt="fonts" className="mt-1" style={{ width: "30rem" }} />
+        <p style={{fontFamily: "Times New Roman"}} className="text-6xl py-8 border border-gray-200 border-2 my-2 px-4">0123456789+-/*</p>
         {loading ? "Loading" : state.apiAns ? (state.apiAns + '=' + state.answer): "No input yet"} <br/>
         <div className="m-1">
           <button className="inline-block mx-2 text-xl p-1 rounded bg-blue-800 border border-blue-600" onClick={clear}>Clear</button>

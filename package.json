@@ -10,17 +10,19 @@
     "serverless": "serverless",
     "lint": "./node_modules/.bin/eslint .",
     "lint:fix": "./node_modules/.bin/eslint . --fix",
-    "test": "jest"
+    "test": "jest",
+    "nightwatch": "nightwatch"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint && npm run lint:fix"
+      "pre-commit": "npm run lint"
     }
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "chromedriver": "^83.0.0",
     "eslint": "^7.1.0",
     "serverless": "^1.71.3",
     "serverless-offline": "^6.1.4"

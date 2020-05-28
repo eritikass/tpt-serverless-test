@@ -14,6 +14,9 @@
     },
     "rules": {
         "no-undef": "off",
-        "no-unused-vars": "off"
+        "no-unused-vars": "off",
+        "max-len": "off",
+        "global-require": "off",
+        "import/no-extraneous-dependencies": "off"
     }
 }

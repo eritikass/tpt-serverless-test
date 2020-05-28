@@ -10,26 +10,40 @@ module.exports.calculator = async (event) => {
 
   const html = `
   <html>
-      <form action="/dev/calculator" method="GET">
-      <input type="number" name="a" value=${a}>
-      <select name="operator">
-      <option value="+">+</option>
-      <option value="-">-</option>
-      <option value="/">/</option>
-      <option value="*">*</option>
-      <option value=">">></option>
-      <option value="<"><</option>
-      <option value="=">=</option> 
-      <option value=">=">>=</option>
-      <option value="<="><=</option>
-    </select>
-    <input type="number" name="b" value=${b}>
-    <input type="submit" value="=">
-    <strong id="answer">${answer}</strong>
-    
-    </form>
-    </body>
-  </html>`;
+  <head>
+      <title>Calculator</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+  </head>
+  <form action="/dev/calculator" method="GET">
+      <div class="columns is-centered">
+          <div class="column is-half field is-grouped">
+              <input class="input" type="number" name="a" value=${a} style="margin: 5px;">
+              <div class="select" style="margin: 5px;">
+                  <select name="operator">
+                      <option value="+">+</option>
+                      <option value="-">-</option>
+                      <option value="/">/</option>
+                      <option value="*">*</option>
+                      <option value=">">></option>
+                      <option value="<"><</option>
+                      <option value="=">=</option>
+                      <option value=">=">>=</option>
+                      <option value="<="><=</option>
+                  </select>
+              </div>
+              <input class="input" type="number" name="b" value=${b} style="margin: 5px;">
+              <input class="button" type="submit" value="=" style="margin-top: 5px;">
+          </div>
+      </div>
+      <div class="columns is-centered">
+          <h2 id="answer" class="subtitle">Answer is: </h2>
+          <h2 id="answer" class="subtitle" > ${answer}</h2>
+      </div> 
+  </form>
+  </body>
+  </html>
+  `;
 
 
   return {

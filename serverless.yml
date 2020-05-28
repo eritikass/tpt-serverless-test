@@ -6,11 +6,11 @@ provider:
   runtime: nodejs12.x
 
 functions:
-  hello:
-    handler: handler.hello
+  calculator:
+    handler: handler.calculator
     events:
       - http:
-          path: hello
+          path: calculator
           method: get
 
 plugins:

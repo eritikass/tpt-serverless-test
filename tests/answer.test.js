@@ -12,6 +12,10 @@ test('expect answer to be 2', async () => {
   expect(getAnswer(4, 2, '/')).toBe(2);
 });
 
+test('expect answer to be 8', async () => {
+  expect(getAnswer(4, 2, '*')).toBe(8);
+});
+
 test('expect answer to be true', async () => {
   expect(getAnswer(10, 5, '>')).toBe(true);
 });

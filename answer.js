@@ -1,14 +1,14 @@
 function getAnswer(a, b, operator) {
-    if(operator === "+") return a+b;
-    else if (operator === "-") return a-b;
-    else if (operator === "/") return a/b;
-    else if (operator === "*") return a*b;
-    else if (operator === ">") return a>b;
-    else if (operator === "<") return a<b;
-    else if (operator === ">=") return a>=b;
-    else if (operator === "<=") return a<=b;
-    else if (operator === "=") return a===b;
-    else return "wat";
+  if (operator === '+') return a + b;
+  if (operator === '-') return a - b;
+  if (operator === '/') return a / b;
+  if (operator === '*') return a * b;
+  if (operator === '>') return a > b;
+  if (operator === '<') return a < b;
+  if (operator === '>=') return a >= b;
+  if (operator === '<=') return a <= b;
+  if (operator === '=') return a === b;
+  return 'wat';
 }
 
 exports.getAnswer = getAnswer;

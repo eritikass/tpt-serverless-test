@@ -1,15 +1,14 @@
-'use strict';
 
-const { getAnswer } = require('./answer')
+const { getAnswer } = require('./answer');
 
-module.exports.calculator = async event => {
-  let operator = (event.queryStringParameters || {}).operator || '+';
-  let a = parseInt((event.queryStringParameters || {}).a) || 0;
-  let b = parseInt((event.queryStringParameters || {}).b) || 0;
+module.exports.calculator = async (event) => {
+  const operator = (event.queryStringParameters || {}).operator || '+';
+  const a = (event.queryStringParameters || {}).a || 0;
+  const b = (event.queryStringParameters || {}).b || 0;
 
-  let answer = getAnswer(a, b, operator);
+  const answer = getAnswer(parseInt(a, 10), parseInt(b, 10), operator);
 
-  let html = `
+  const html = `
   <html>
       <form action="/dev/calculator" method="GET">
       <input type="number" name="a" value=${a}>
@@ -30,7 +29,7 @@ module.exports.calculator = async event => {
     
     </form>
     </body>
-  </html>`
+  </html>`;
 
 
   return {

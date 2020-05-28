@@ -37,7 +37,7 @@ module.exports.calculator = async (event) => {
           </div>
       </div>
       <div class="columns is-centered">
-          <h2 id="answer" class="subtitle">Answer is: </h2>
+          <h2 class="subtitle">Answer is: </h2>
           <h2 id="answer" class="subtitle" > ${answer}</h2>
       </div> 
   </form>

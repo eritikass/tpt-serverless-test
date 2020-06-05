@@ -1,9 +1,15 @@
+# Calculator Serverless App
+
+AWS **Serverless** Application with **eslint**, **nightwatch**, **jest** testing and **CI** deployment.
+
+You can see my **deployed application at**: [`link`](https://lm92mqzaqh.execute-api.us-east-1.amazonaws.com/dev/calc).
+
 ## Usage
 
- - configure aws creditals ( https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html )
- - install node packages ( `npm install` )
+ - Configure aws creditals ( https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html )
+ - Install node packages ( `npm install` )
 
-run locally: `npm start`
+Run serverless locally: `npm start`
 
 NB! Before deploying make sure you have correct tokens in ~/.aws/credentials and /config...
 deploy to aws: `npm run deploy`

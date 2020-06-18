@@ -15,7 +15,8 @@
     "serverless": "serverless",
     "test": "jest",
     "lint": "./node_modules/.bin/eslint .",
-    "lint:fix": "./node_modules/.bin/eslint . --fix"
+    "lint:fix": "./node_modules/.bin/eslint . --fix",
+    "nightwatch": "nightwatch"
   },
   "keywords": [],
   "author": "",
@@ -26,11 +27,13 @@
     "serverless-offline": "^6.1.4"
   },
   "dependencies": {
+    "chromedriver": "^83.0.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.20.0",
     "husky": "^4.2.5",
-    "jest": "^26.0.1"
+    "jest": "^26.0.1",
+    "nightwatch": "^1.3.6"
   }
 }

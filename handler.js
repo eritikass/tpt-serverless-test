@@ -1,13 +1,13 @@
-const { calculator } = require("./calculator");
+const { calculator } = require('./calculator');
 
-module.exports.hello = async event => {
+module.exports.hello = async (event) => {
   const operator = (event.queryStringParameters || {}).operator || '+';
   const a = (event.queryStringParameters || {}).a || 0;
   const b = (event.queryStringParameters || {}).b || 0;
 
-  var answer = calculator(parseInt(a, 10), parseInt(b, 10), operator);
+  const answer = calculator(parseInt(a, 10), parseInt(b, 10), operator);
 
-  var html = `
+  const html = `
   <body><form action="/dev/hello" method="GET">
       <input type="number" name="a" value="${a}">
       <select name="operator">
@@ -27,7 +27,7 @@ module.exports.hello = async event => {
       <strong class="result">${answer}</strong>
     </form>
     </body>
-  `
+  `;
 
   return {
     statusCode: 200,

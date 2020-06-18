@@ -8,13 +8,22 @@
     "deploy": "serverless deploy",
     "remove": "serverless remove",
     "serverless": "serverless",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint .",
+    "lint:fix": "./node_modules/.bin/eslint . --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^7.2.0",
     "serverless": "^1.67.3",
     "serverless-offline": "^6.1.4"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0"
   }
 }

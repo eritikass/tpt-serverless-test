@@ -24,7 +24,7 @@ module.exports.hello = async event => {
       </select>
       <input type="number" name="b" value="${b}">
       <input type="submit" style="color:red;" value="=">
-      <strong class="result">${answer}a</strong>
+      <strong class="result">${answer}</strong>
     </form>
     </body>
   `

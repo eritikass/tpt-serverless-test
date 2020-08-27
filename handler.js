@@ -8,7 +8,7 @@ module.exports.hello = async (event) => {
 
   const answer = calculator(parseInt(a, 10), parseInt(b, 10), operator);
 
-  let selected = getSelected(operator);
+  const selected = getSelected(operator);
 
   const html = `
   <body><form action="/dev/hello" method="GET">
